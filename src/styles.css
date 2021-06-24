@@ -4,6 +4,15 @@ Antera Software USA, Inc.
 */
 
 /*
+THEME DEFAULT: 
+'deeppurple-amber.css' - DARK 
+'indigo-pink.css' - LIGHT 
+'pink-bluegray.css' - DARK 
+'purple-green.css' - LIGHT 
+*/
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/*
 FONT: ROBOTO
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
