@@ -1,0 +1,17 @@
+/*
+DEMO: [insert name of component]
+Antera Software USA, Inc.
+*/
+
+/*
+FONT: ROBOTO
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+/*
+WILDCARD
+Sets styles for everything.
+*/
+* {
+  font-family: 'Roboto', sans-serif;
+}
