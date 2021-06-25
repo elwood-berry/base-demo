@@ -1,5 +1,14 @@
 # REFERENCES  
 
+## MATERIAL  
+1. [NPM: Angular Material](https://www.npmjs.com/package/@angular/material)
+
+## FXLAYOUT  
+1. [NPM: Angular Flex-Layout](https://www.npmjs.com/package/@angular/flex-layout)
+1. [fxLayout](https://github.com/angular/flex-layout)
+
+
+
 ## ERRORS    
 
 --- 
