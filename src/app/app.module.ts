@@ -1,6 +1,6 @@
 /*
 DEMO: [insert name of component]
-Antera Software USA, Inc.
+[insert owner name]
 */
 
 // ANGULAR
