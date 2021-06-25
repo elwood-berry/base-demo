@@ -24,3 +24,8 @@ Sets styles for everything.
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+/*
+DEFAULT ADVANCE THEME
+*/
+@import './@advance/scss/advance.theme.scss';
