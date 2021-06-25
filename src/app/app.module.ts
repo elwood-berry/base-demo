@@ -13,42 +13,49 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 // ANGULAR MATERIAL
-import { MatAutocompleteModule } from '@angular/material/autocomplete'; // AUTOCOMPLETE
-import { MatBadgeModule } from '@angular/material/badge'; // BADGE
-import { MatBottomSheetModule } from '@angular/material/bottom-sheet'; // BOTTOM SHEET
-import { MatButtonModule } from '@angular/material/button'; // BUTTON
-import { MatButtonToggleModule } from '@angular/material/button-toggle'; // BUTTON SYLE
-import { MatCardModule } from '@angular/material/card'; // CARD
-import { MatCheckboxModule } from '@angular/material/checkbox'; // CHECKBOX
-import { MatChipsModule } from '@angular/material/chips'; // CHIPS
-import { MatDatepickerModule } from '@angular/material/datepicker'; // DATE PICKER
-import { MatDialogModule } from '@angular/material/dialog'; // DIALOG
-import { MatDividerModule } from '@angular/material/divider'; // DIVIDER
-import { DragDropModule } from '@angular/cdk/drag-drop'; // DRAG & DROP
-import { MatExpansionModule } from '@angular/material/expansion'; // EXPANSION
-import { MatFormFieldModule } from '@angular/material/form-field'; // FORM FIELD
-import { MatGridListModule } from '@angular/material/grid-list'; // GRID LIST
-import { MatIconModule } from '@angular/material/icon'; // ICON
-import { MatInputModule } from '@angular/material/input'; // INPUT
-import { MatListModule } from '@angular/material/list'; // LIST
-import { MatMenuModule } from '@angular/material/menu'; // MENU
-import { MatPaginatorModule } from '@angular/material/paginator'; // PAGINATOR
-import { MatProgressBarModule } from '@angular/material/progress-bar'; // PROGRESS BAR
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; // PROGRESS SPINNER
-import { MatRadioModule } from '@angular/material/radio'; // RADIO BUTTONS
-import { MatRippleModule } from '@angular/material/core'; // RIPPLE
-import { MatSelectModule } from '@angular/material/select'; // SELECT
-import { MatSidenavModule } from '@angular/material/sidenav'; // SIDENAV
-import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // SLIDE TOGGLE
-import { MatSliderModule } from '@angular/material/slider'; // SLIDER
-import { MatSnackBarModule } from '@angular/material/snack-bar'; // SNACKBAR
-import { MatSortModule } from '@angular/material/sort'; // SORT
-import { MatStepperModule } from '@angular/material/stepper'; // STEPPER
-import { MatTableModule } from '@angular/material/table'; // TABLE
-import { MatTabsModule } from '@angular/material/tabs'; // TABS
-import { MatToolbarModule } from '@angular/material/toolbar'; // TOOLBAR
-import { MatTooltipModule } from '@angular/material/tooltip'; // TOOLTIP
+import { A11yModule } from '@angular/cdk/a11y';
+import { CdkStepperModule } from '@angular/cdk/stepper';
+import { CdkTableModule } from '@angular/cdk/table';
+import { CdkTreeModule } from '@angular/cdk/tree';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSortModule } from '@angular/material/sort';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { PortalModule } from '@angular/cdk/portal';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 // FXLAYOUT
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -58,8 +65,12 @@ import { AdvanceDialogComponent } from './components/advance-dialog/advance-dial
 
 @NgModule({
   imports: [
-    BrowserModule,
-    FormsModule,
+    A11yModule,
+    ClipboardModule,
+    CdkStepperModule,
+    CdkTableModule,
+    CdkTreeModule,
+    DragDropModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -68,32 +79,36 @@ import { AdvanceDialogComponent } from './components/advance-dialog/advance-dial
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
+    MatStepperModule,
     MatDatepickerModule,
     MatDialogModule,
     MatDividerModule,
     MatExpansionModule,
-    MatFormFieldModule,
     MatGridListModule,
     MatIconModule,
     MatInputModule,
     MatListModule,
     MatMenuModule,
+    MatNativeDateModule,
     MatPaginatorModule,
     MatProgressBarModule,
+    MatProgressSpinnerModule,
     MatRadioModule,
     MatRippleModule,
     MatSelectModule,
-    MatSlideToggleModule,
+    MatSidenavModule,
     MatSliderModule,
+    MatSlideToggleModule,
     MatSnackBarModule,
     MatSortModule,
-    MatStepperModule,
-    // MatTableModule,
+    MatTableModule,
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    DragDropModule,
+    OverlayModule,
+    PortalModule,
+    ScrollingModule,
     FlexLayoutModule
   ],
   declarations: [AppComponent, AdvanceDialogComponent],
