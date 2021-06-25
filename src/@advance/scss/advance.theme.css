@@ -1,6 +1,11 @@
-
-
+/*
+IMPORTS
+*/
 @import 'components';
-div {
+
+/*
+INDEX 
+*/
+div.index {
   background-color: #00ff00;
 }
