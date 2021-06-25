@@ -28,4 +28,4 @@ Sets styles for everything.
 /*
 DEFAULT ADVANCE THEME
 */
-@import 'src/@advance/advance.theme.scss';
+@import 'advance.theme.css';
