@@ -1,0 +1,21 @@
+/*
+CARDS
+Content container for text, photos, and actions in the context of a single subject.
+
+See 'https://material.angular.io/components/card/overview'
+
+DOM STRUCTURE
+----------
+<div class=[INSERT CLASS NAME]>
+  @include [INSERT CARD MIXIN]
+
+----------
+Last Updated: [insert date]
+[insert owner name]
+
+*/
+
+//
+@mixin advance-default-card {
+  background-color: #ff0080;
+}
