@@ -3,12 +3,14 @@ DEMO: [insert name of component]
 Antera Software USA, Inc.
 */
 
+// ANGULAR
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { AppComponent } from './app.component';
 
-// import { HelloComponent } from './hello.component';
+// APP
+import { AppComponent } from './app.component';
 
 // ANGULAR MATERIAL
 import { MatAutocompleteModule } from '@angular/material/autocomplete'; // AUTOCOMPLETE
